@@ -1,4 +1,4 @@
-import { defineConfig } from 'tsup';
+import { defineConfig } from 'tsdown';
 
 export default defineConfig({
   entry: [
@@ -16,12 +16,14 @@ export default defineConfig({
     'src/cli/index.ts',
   ],
   format: ['esm', 'cjs'],
-  dts: true,
+  dts: { bundle: true },
   clean: true,
   sourcemap: false,
   minify: true,
-  splitting: false,
   treeshake: true,
+  splitting: false,
+  platform: 'node',
+  target: 'node18',
   external: [
     'drizzle-orm',
     'pg',
