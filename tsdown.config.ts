@@ -16,6 +16,7 @@ export default defineConfig({
         'src/cli/index.ts',
     ],
     format: ['esm', 'cjs'],
+    fixedExtension: false,
     dts: true,
     clean: true,
     sourcemap: false,
