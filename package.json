@@ -128,7 +128,7 @@
     "test:coverage": "vitest --coverage",
     "lint": "eslint src --ext .ts",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "drizzle",
