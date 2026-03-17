@@ -1,16 +1,16 @@
 {
-  "name": "mkg-drizzle-multitenant",
+  "name": "drizzle-multitenant",
   "version": "1.3.5",
   "description": "Multi-tenancy toolkit for Drizzle ORM with schema isolation, tenant context, and parallel migrations",
   "type": "module",
   "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
       },
       "require": {
         "types": "./dist/index.d.cts",
@@ -19,8 +19,8 @@
     },
     "./express": {
       "import": {
-        "types": "./dist/integrations/express.d.ts",
-        "default": "./dist/integrations/express.js"
+        "types": "./dist/integrations/express.d.mts",
+        "default": "./dist/integrations/express.mjs"
       },
       "require": {
         "types": "./dist/integrations/express.d.cts",
@@ -29,8 +29,8 @@
     },
     "./fastify": {
       "import": {
-        "types": "./dist/integrations/fastify.d.ts",
-        "default": "./dist/integrations/fastify.js"
+        "types": "./dist/integrations/fastify.d.mts",
+        "default": "./dist/integrations/fastify.mjs"
       },
       "require": {
         "types": "./dist/integrations/fastify.d.cts",
@@ -39,8 +39,8 @@
     },
     "./nestjs": {
       "import": {
-        "types": "./dist/integrations/nestjs/index.d.ts",
-        "default": "./dist/integrations/nestjs/index.js"
+        "types": "./dist/integrations/nestjs/index.d.mts",
+        "default": "./dist/integrations/nestjs/index.mjs"
       },
       "require": {
         "types": "./dist/integrations/nestjs/index.d.cts",
@@ -49,8 +49,8 @@
     },
     "./hono": {
       "import": {
-        "types": "./dist/integrations/hono.d.ts",
-        "default": "./dist/integrations/hono.js"
+        "types": "./dist/integrations/hono.d.mts",
+        "default": "./dist/integrations/hono.mjs"
       },
       "require": {
         "types": "./dist/integrations/hono.d.cts",
@@ -59,8 +59,8 @@
     },
     "./migrator": {
       "import": {
-        "types": "./dist/migrator/index.d.ts",
-        "default": "./dist/migrator/index.js"
+        "types": "./dist/migrator/index.d.mts",
+        "default": "./dist/migrator/index.mjs"
       },
       "require": {
         "types": "./dist/migrator/index.d.cts",
@@ -69,8 +69,8 @@
     },
     "./cross-schema": {
       "import": {
-        "types": "./dist/cross-schema/index.d.ts",
-        "default": "./dist/cross-schema/index.js"
+        "types": "./dist/cross-schema/index.d.mts",
+        "default": "./dist/cross-schema/index.mjs"
       },
       "require": {
         "types": "./dist/cross-schema/index.d.cts",
@@ -79,8 +79,8 @@
     },
     "./scaffold": {
       "import": {
-        "types": "./dist/scaffold/index.d.ts",
-        "default": "./dist/scaffold/index.js"
+        "types": "./dist/scaffold/index.d.mts",
+        "default": "./dist/scaffold/index.mjs"
       },
       "require": {
         "types": "./dist/scaffold/index.d.cts",
@@ -89,8 +89,8 @@
     },
     "./lint": {
       "import": {
-        "types": "./dist/lint/index.d.ts",
-        "default": "./dist/lint/index.js"
+        "types": "./dist/lint/index.d.mts",
+        "default": "./dist/lint/index.mjs"
       },
       "require": {
         "types": "./dist/lint/index.d.cts",
@@ -99,8 +99,8 @@
     },
     "./metrics": {
       "import": {
-        "types": "./dist/metrics/index.d.ts",
-        "default": "./dist/metrics/index.js"
+        "types": "./dist/metrics/index.d.mts",
+        "default": "./dist/metrics/index.mjs"
       },
       "require": {
         "types": "./dist/metrics/index.d.cts",
@@ -109,8 +109,8 @@
     },
     "./export": {
       "import": {
-        "types": "./dist/export/index.d.ts",
-        "default": "./dist/export/index.js"
+        "types": "./dist/export/index.d.mts",
+        "default": "./dist/export/index.mjs"
       },
       "require": {
         "types": "./dist/export/index.d.cts",
